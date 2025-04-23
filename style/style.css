@@ -70,18 +70,27 @@
   letter-spacing: 1rem;
 }
 
+.menu{
+  display: none;
+}
+
 /* MAIN SECTION */
 main {
   background: var(--Grayish-blu);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* SECTION */
 .services-section {
   width: 100%;
+
 }
 .service-block {
   display: flex;
   width: 100%;
+  
 }
 .service-text,
 .service-image {
@@ -287,9 +296,7 @@ footer .nav-links .nav-item a:hover{
     background-image: url(/images/mobile/image-header.jpg);
   }
 
-  .nav-menu{
-    display: none;
-  }
+  
   .logo{
     width: 15rem;
   }
@@ -299,16 +306,16 @@ footer .nav-links .nav-item a:hover{
   .service-block{
     flex-direction: column;
   }
-  .service-text,
+  
 .service-image {
   width: 100%;
-  overflow: hidden;
+  height: auto;
 
 }
 .service-text{
   order: 2;
   text-align: center;
-
+height: 55vh;
   align-items: center;
  padding: 0;
  width: 90%;
@@ -345,6 +352,23 @@ footer .nav-links .nav-item a:hover{
 
 }
 
+.nav-item a {
+  text-decoration: none;
+  color: var(  --Dark-grayish-blue);
+}
+.nav-contact {
+
+  background-color: var(--Yellow);
+
+  color: var(--Very-dark-desaturated-blue);
+
+  border: solid .1rem transparent;
+}
+.nav-contact:hover {
+  background-color: hsl(180, 100%, 94%);
+  color: var(--Very-dark-desaturated-blue);
+  border: solid .1rem var(--Very-dark-desaturated-blue);
+}
 
 .container-testimonials {
   display: flex;
@@ -367,5 +391,42 @@ footer .nav-links .nav-item a:hover{
   font-size: 1.7rem;
   letter-spacing: 3px;
 }
+.menu{
+  display:block;
+}
+.nav-menu{
+  display: none;
+  
+}
+.nav-menu.active{
+  margin:  auto ;
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: var(--White);
+position: absolute;
+left: 50%;
+top: 20%;
+transform: translate(-50%,-50%);
+width: 90%;
+clip-path: polygon(0 10%, 90% 10%, 100% 0, 100% 10%, 100% 100%, 0 100%, 0% 75%);
+height: auto;
+margin-top: 15rem;
+padding: 8rem 0;
+
+}
+
+.nav-links.active{
+  flex-direction: column;
+  text-align: center;
+}
+.service-block {
+
+
+  flex-direction: column;
+  align-items: center;
+}
+
 
 }

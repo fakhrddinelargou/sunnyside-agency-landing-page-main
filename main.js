@@ -1,22 +1,12 @@
 
-
-// const fill = document.querySelectorAll('.fillColor')
-
+const nav_menu  =  document.querySelector('.nav-menu')
 
 
 
-
-// const allFill =Array.from(fill)
-
-// console.log(allFill);
+const  nav_links= document.querySelector('.nav-links')
 
 
-// allFill.forEach((even) =>{
-
-//     even.addEventListener('mouseleave' , ()=>
-
-//         even.setAttribute('fill' , 'green')
-  
-//     );
-
-// })
+function menu(){
+nav_menu.classList.toggle('active')
+nav_links.classList.toggle('active')
+}
