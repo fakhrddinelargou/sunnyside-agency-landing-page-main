@@ -10,7 +10,13 @@
   flex-direction: column;
   gap: 7rem;
   align-items: center;
+
+
+}
+
+.main-heading{
   color: var(--White);
+  text-align: center;
 }
 
 .header-container {
@@ -22,6 +28,7 @@
 }
 .logo {
   width: 18rem;
+  
 }
 .nav-menu {
   display: flex;
@@ -94,11 +101,7 @@ main {
   font-size: 4rem;
   color: var(--Very-dark-desaturated-blue);
 }
-.service-description {
-  text-align: start;
-  color: var(--Dark-blue);
-  line-height: 1.5;
-}
+
 
 .learn-more {
   color: var(--Very-dark-desaturated-blue);
@@ -201,6 +204,7 @@ main {
 }
 .testimonials {
   display: flex;
+  
   width: 80%;
   gap: 5rem;
 }
@@ -245,3 +249,123 @@ main {
 
 /* FOOTER */
 
+footer{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  background: hsl(169, 28%, 60%);
+  height:40vh;
+}
+
+
+
+
+footer .nav-item a{
+  transition: .2s;
+  color: var(--Dark-moderate-cyan) ;
+}
+
+footer .nav-links .nav-item a:hover{
+  color: white;
+}
+
+.media a svg path:hover{
+  fill:var(--White);
+  transition: .3s;
+}
+
+
+
+
+
+
+@media screen and (max-width : 50rem) {
+  .site-header {
+    background-image: url(/images/mobile/image-header.jpg);
+  }
+
+  .nav-menu{
+    display: none;
+  }
+  .logo{
+    width: 15rem;
+  }
+  .main-heading{
+    font-size: 3rem;
+  }
+  .service-block{
+    flex-direction: column;
+  }
+  .service-text,
+.service-image {
+  width: 100%;
+  overflow: hidden;
+
+}
+.service-text{
+  order: 2;
+  text-align: center;
+
+  align-items: center;
+ padding: 0;
+ width: 90%;
+}
+.service-description {
+  text-align: center;
+  color: var(--Dark-blue);
+  line-height: 1.5;
+}
+.design-services{
+  flex-direction: column;
+  height: auto;
+}
+
+.design-service {
+  width: 100%;
+  height: 65rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  
+}
+.graphic-design {
+  background-image: url(/images/mobile/image-graphic-design.jpg);
+}
+
+.photography {
+  background-image: url(/images/mobile/image-photography.jpg);
+}
+
+.design-description {
+  
+  width: 90%;
+
+}
+
+
+.container-testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  height: auto;
+  text-align: center;
+  padding:5rem 0;
+}
+
+.testimonials {
+  flex-direction: column;
+
+  width: 80%;
+  gap: 5rem;
+}
+.client-title {
+  font-size: 1.7rem;
+  letter-spacing: 3px;
+}
+
+}
